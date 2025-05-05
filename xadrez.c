@@ -32,13 +32,13 @@ int main() {
     //  Desafio novato
     int i;
 
-    // Movimento da TORRE - 5 casas para a direita (usando for)
+    // Movimento da TORRE (usando for)
     printf("Movimento da TORRE:\n");
     for (i = 1; i <= 5; i++) {
         printf("Direita\n");
     }
 
-    // Movimento do BISPO - 5 casas na diagonal para cima e à direita (usando while)
+    // Movimento do BISPO (usando while)
     printf("\nMovimento do BISPO:\n");
     i = 1;
     while (i <= 5) {
@@ -46,13 +46,31 @@ int main() {
         i++;
     }
 
-    // Movimento da RAINHA - 8 casas para a esquerda (usando do-while)
+    // Movimento da RAINHA (usando do-while)
     printf("\nMovimento da RAINHA:\n");
     i = 1;
     do {
         printf("Esquerda\n");
         i++;
     } while (i <= 8);
+
+    // Desafio aventureiro
+
+    printf("\nMovimento do CAVALO:\n");
+
+    int passo;
+
+    // Loop externo: duas casas para Baixo
+    for (passo = 1; passo <= 2; passo++) {
+        printf("Baixo\n");
+    }
+
+    // Loop interno (usando while)
+    passo = 1;
+    while (passo <= 1) {
+        printf("Esquerda\n");
+        passo++;
+    }
 
     return 0;
 }
